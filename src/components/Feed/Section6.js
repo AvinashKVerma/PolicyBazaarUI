@@ -15,6 +15,7 @@ export default class Section6 extends Component {
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
+      arrows: false,
       autoplay: true,
       speed: 500,
       autoplaySpeed: 3000,
@@ -49,7 +50,14 @@ export default class Section6 extends Component {
     return (
       <div>
         <Slider {...settings}>
-          <div className="card">
+          {images.map((ele, index) => {
+            return (
+              <div className="card" key={index}>
+                <img src={ele} alt="" />
+              </div>
+            );
+          })}
+          {/* <div className="card">
             <img src={images[0]} alt="" />
           </div>
           <div className="card">
@@ -66,7 +74,7 @@ export default class Section6 extends Component {
           </div>
           <div className="card">
             <img src={images[5]} alt="" />
-          </div>
+          </div> */}
         </Slider>
       </div>
     );

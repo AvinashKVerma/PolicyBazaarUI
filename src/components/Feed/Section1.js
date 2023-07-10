@@ -37,7 +37,6 @@ function Section1() {
             <div className="tax-slider slick-initialized slick-slider">
               <div className="slick-list draggable" aria-live="polite">
                 <div className="slick-track">
-                  {" "}
                   <Slideshow images={images} />
                 </div>
               </div>

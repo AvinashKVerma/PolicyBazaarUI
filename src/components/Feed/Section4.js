@@ -120,7 +120,6 @@ function Section4() {
                   <div className="tax-slider1 slick-initialized slick-slider">
                     <div className="slick-list draggable" aria-live="polite">
                       <div className="slick-track">
-                        {" "}
                         <Slideshow1 images={images} />
                       </div>
                     </div>

@@ -518,8 +518,6 @@ function Header() {
                     Claim support
                   </label>
                 </li>
-              </ul>
-              <ul className="nav__list nav-with-support">
                 <li className="parent-item ndm down-require">
                   <label for="group-claim">
                     <span className="mobile-menu-bg renewal setleft"></span>
@@ -527,8 +525,6 @@ function Header() {
                     Renew Policy
                   </label>
                 </li>
-              </ul>
-              <ul className="nav__list nav-with-support">
                 <li className="parent-item">
                   <div className="heading-links">
                     <span className="badge"> Explore products</span>

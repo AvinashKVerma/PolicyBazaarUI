@@ -10,7 +10,9 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <Feed />
+      <div className="feeed">
+        <Feed />
+      </div>
       <footer className="moreInsurance">
         <Footer />
       </footer>

@@ -8,6 +8,7 @@ function Section11() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
+    arrows: false,
     speed: 2500,
     autoplaySpeed: 2495,
     cssEase: "linear",

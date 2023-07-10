@@ -82,8 +82,8 @@ export default class Responsive extends Component {
 
     const arr = testimonials.map((ele, index) => {
       return (
-        <div className="block slick-current slick-active">
-          <div className="data">
+        <div key={index} className="block slick-current slick-active">
+          <div key={index} className="data">
             <p className="customer">{ele.customer}</p>
             <p className="copy">{ele.copy}</p>
           </div>

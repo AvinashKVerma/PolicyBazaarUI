@@ -11,16 +11,13 @@ const Slideshow = ({ images }) => {
   useEffect(() => {
     const currentRef = slickRef.current; // Store the current ref value in a local variable
 
-    $(currentRef).on(
-      "init reInit afterChange",
-      function (event, slick, currentSlide, nextSlide) {
-        if (!slick.$dots) {
-          return;
-        }
-        const i = (currentSlide ? currentSlide : 0) + 1;
-        $(".pagingInfo").text(i + "/" + slick.$dots[0].children.length);
+    $(currentRef).on("init reInit afterChange", function (slick, currentSlide) {
+      if (!slick.$dots) {
+        return;
       }
-    );
+      const i = (currentSlide ? currentSlide : 0) + 1;
+      $(".pagingInfo").text(i + "/" + slick.$dots[0].children.length);
+    });
 
     $(currentRef).slick({
       slidesToShow: 1,
