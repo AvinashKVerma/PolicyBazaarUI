@@ -101,8 +101,8 @@ export default class Responsive extends Component {
         <div className="row">
           <div className="testimonial-new slick-initialized slick-slider">
             <Slider {...settings}>
-              {arr.map((ele) => {
-                return <div> {ele}</div>;
+              {arr.map((ele, index) => {
+                return <div key={index}> {ele}</div>;
               })}
             </Slider>
           </div>

@@ -512,14 +512,14 @@ function Header() {
               </ul>
               <ul className="nav__list nav-with-support">
                 <li className="parent-item ndm down-require">
-                  <label for="group-claim">
+                  <label htmlFor="group-claim">
                     <span className="mobile-menu-bg renewal setleft"></span>
                     <span className="down-arrow"></span>
                     Claim support
                   </label>
                 </li>
                 <li className="parent-item ndm down-require">
-                  <label for="group-claim">
+                  <label htmlFor="group-claim">
                     <span className="mobile-menu-bg renewal setleft"></span>
                     <span className="down-arrow"></span>
                     Renew Policy
