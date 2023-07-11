@@ -4,11 +4,12 @@ import "./Section9.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
-export default class Responsive extends Component {
+export default class Section9 extends Component {
   render() {
     var settings = {
       dots: true,
       infinite: false,
+      arrows: false,
       speed: 500,
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -40,7 +41,6 @@ export default class Responsive extends Component {
         },
       ],
     };
-
     const testimonials = [
       {
         customer: "Urvashi Solanki",
