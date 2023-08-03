@@ -101,35 +101,31 @@ function Header() {
   ];
 
   const [isDropdownOpen, setDropdownOpen] = useState(false);
-
-  const handleDropdownToggle = () => {
-    setDropdownOpen(!isDropdownOpen);
-  };
-
   const [isDropdownOpen1, setDropdownOpen1] = useState(false);
-
-  const handleDropdownToggle1 = () => {
-    setDropdownOpen1(!isDropdownOpen1);
-  };
-
   const [isDropdownOpen2, setDropdownOpen2] = useState(false);
-
-  const handleDropdownToggle2 = () => {
-    setDropdownOpen2(!isDropdownOpen2);
-  };
-
   const [isDropdownOpen3, setDropdownOpen3] = useState(false);
-
-  const handleDropdownToggle3 = () => {
-    setDropdownOpen3(!isDropdownOpen3);
-  };
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [term, setTerm] = useState(false);
   const [health, setHealth] = useState(false);
   const [motor, setMotor] = useState(false);
   const [inves, setInves] = useState(false);
   const [other, setOther] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleDropdownToggle1 = () => {
+    setDropdownOpen1(!isDropdownOpen1);
+  };
+
+  const handleDropdownToggle2 = () => {
+    setDropdownOpen2(!isDropdownOpen2);
+  };
+
+  const handleDropdownToggle3 = () => {
+    setDropdownOpen3(!isDropdownOpen3);
+  };
 
   const handleClick = () => {
     // Toggle the open class on the hamburger menu
