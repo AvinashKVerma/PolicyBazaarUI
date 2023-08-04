@@ -57,24 +57,6 @@ export default class Section6 extends Component {
               </div>
             );
           })}
-          {/* <div className="card">
-            <img src={images[0]} alt="" />
-          </div>
-          <div className="card">
-            <img src={images[1]} alt="" />
-          </div>
-          <div className="card">
-            <img src={images[2]} alt="" />
-          </div>
-          <div className="card">
-            <img src={images[3]} alt="" />
-          </div>
-          <div className="card">
-            <img src={images[4]} alt="" />
-          </div>
-          <div className="card">
-            <img src={images[5]} alt="" />
-          </div> */}
         </Slider>
       </div>
     );

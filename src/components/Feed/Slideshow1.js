@@ -11,20 +11,17 @@ const Slideshow1 = ({ images }) => {
   useEffect(() => {
     const currentRef = slickRef.current;
 
-    $(currentRef).on(
-      "init reInit afterChange",
-      function (event, slick, currentSlide, nextSlide) {
-        if (!slick.$dots) {
-          return;
-        }
-        const i = (currentSlide ? currentSlide : 0) + 1;
-        $(".pagingInfo").text(i + "/" + slick.$dots[0].children.length);
+    $(currentRef).on("init reInit afterChange", function (slick, currentSlide) {
+      if (!slick.$dots) {
+        return;
       }
-    );
+      const i = (currentSlide ? currentSlide : 0) + 1;
+      $(".pagingInfo").text(i + "/" + slick.$dots[0].children.length);
+    });
 
     $(currentRef).slick({
-      slidesToShow: 3, // Display three slides at a time
-      slidesToScroll: 3, // Scroll three slides at a time
+      slidesToShow: 3,
+      slidesToScroll: 3,
       autoplay: true,
       arrows: false,
       dots: true,
