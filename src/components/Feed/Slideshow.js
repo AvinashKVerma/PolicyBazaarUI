@@ -9,7 +9,7 @@ const Slideshow = ({ images }) => {
   const slickRef = useRef(null);
 
   useEffect(() => {
-    const currentRef = slickRef.current; // Store the current ref value in a local variable
+    const currentRef = slickRef.current;
 
     $(currentRef).on("init reInit afterChange", function (slick, currentSlide) {
       if (!slick.$dots) {
