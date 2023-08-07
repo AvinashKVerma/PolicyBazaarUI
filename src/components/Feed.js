@@ -14,7 +14,8 @@ import Section11 from "./Feed/Section11";
 import Section12 from "./Feed/Section12";
 import Section13 from "./Feed/Section13";
 
-function Feed() {
+function Feed(props) {
+  const { func } = props;
   return (
     <>
       <main className="main-container">
@@ -22,7 +23,7 @@ function Feed() {
           <Section1 />
         </div>
         <div className="container prd-container homeIcons home_version11">
-          <Section2 />
+          <Section2 func={func} />
         </div>
         <div className="container">
           <Section3 />

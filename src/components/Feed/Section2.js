@@ -1,11 +1,13 @@
 import "./Section2.css";
-import React from "react";
+import React, { useState } from "react";
 import img5 from "../Resources/img5.avif";
 import img6 from "../Resources/img6.svg";
 
-function Section2() {
+function Section2(props) {
+  const { func } = props;
+  const [li, setLi] = useState(false);
   const item = [
-    { i: "term-life", p: "Term Life", pos: "-.1%" },
+    { i: "term-life", p: "Term Life", pos: "-.1%", link: true },
     {
       i: "health-insurance",
       span: true,
@@ -41,14 +43,21 @@ function Section2() {
       last: true,
     },
   ];
+  const handleClick = () => {
+    func(!li);
+  };
+
   return (
     <section className="prd-row">
       {item.map((ele, index) => {
         return (
           <React.Fragment key={index}>
             <div className={`prd-block ${ele.last ? "tra" : ""}`}>
-              <a href="/#">
-                <div className="prd-icon add shadowHandler short">
+              <a href={"/#"}>
+                <div
+                  onClick={handleClick}
+                  className="prd-icon add shadowHandler short"
+                >
                   <div className="shadowHandlerBox">
                     <i
                       className={`icon-bg homeIconsBg ${ele.i}`}
