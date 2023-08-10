@@ -1,0 +1,220 @@
+.customers-saying .container .h2 {
+  font-size: 30px;
+  line-height: 36px;
+  padding: 0;
+  margin: 40px 0 20px;
+  font-weight: 500;
+  color: #253858;
+}
+
+.customers-saying .container .h2 span {
+  background: #0065ff;
+  width: 70px;
+  height: 4px;
+  margin: 20px 0 0;
+  display: block;
+}
+
+.testimonial-new {
+  width: 100%;
+}
+
+.customers-saying .container .row .slick-track {
+  padding-top: 40px;
+}
+
+.customers-saying .container .row .testimonial-new .block {
+  background: #fff;
+  outline: none;
+  padding: 30px;
+  -webkit-box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.16);
+  margin: 20px 10px 14px 20px;
+  border-radius: 4px;
+  height: 290px;
+  min-width: 190px;
+}
+
+.customers-saying .container .row .testimonial-new .block .customer {
+  color: #212121;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.customers-saying .container .row .testimonial-new .block p.copy::before {
+  width: 16px;
+  height: 20px;
+  margin: 0 auto 10px;
+  content: "";
+  background: url(../Resources/img26.webp) no-repeat;
+  display: block;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 40%;
+}
+
+.swiper-pagination {
+  position: initial;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+.testimonial-new .swiper-pagination {
+  position: initial;
+}
+
+.block p.copy {
+  color: #243757;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  .customers-saying .container .row {
+    position: relative;
+    background: url(../Resources/img25.avif) no-repeat center -100px;
+    background-size: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    min-height: 550px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .customers-saying .container .h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 20px;
+  }
+  .customers-saying .container .h2 span {
+    margin: 10px auto 0;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .customers-saying .container .row {
+    min-height: 400px;
+    background: url(../Resources/img25.avif) no-repeat center -40px;
+    background-size: auto;
+    background-size: cover;
+    padding-top: 0;
+    padding-bottom: 28px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .customers-saying .container .h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@media (min-width: 1200px) {
+  .containerr {
+    width: 1170px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .containerr {
+    width: 960px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .containerr {
+    width: 720px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .containerr {
+    width: 540px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.customers-saying {
+  padding: 20px 0;
+}
+
+.customers-saying .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media only screen and (max-width: 760px) {
+  .containerr {
+    width: 90%;
+    max-width: 100%;
+  }
+  .customers-saying .container .row {
+    background: url(../Resources/img34.avif) no-repeat center -70px;
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 700px) {
+  .customers-saying .container .row .testimonial-new .block {
+    flex-basis: 50%;
+  }
+}

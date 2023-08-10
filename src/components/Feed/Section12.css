@@ -1,0 +1,146 @@
+.help .container .heading {
+  width: 100%;
+}
+
+.help .container .heading .h2 {
+  font-size: 30px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0 0 20px;
+  font-weight: 500;
+  color: #253858;
+}
+.help .container .heading .h2 span {
+  background: #0065ff;
+  width: 70px;
+  height: 4px;
+  margin: 20px 0 0;
+  display: block;
+}
+
+.help .container .help-pic {
+  width: 70%;
+  -webkit-box-ordinal-group: 4;
+  -ms-flex-order: 3;
+  order: 3;
+  text-align: right;
+}
+
+.help .container .help-pic img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.help .container .help-text {
+  width: 30%;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.help .container .help-text p {
+  font-size: 16px;
+  padding: 20px 0;
+  color: #253858;
+  line-height: 30px;
+}
+
+.help .container .help-text a.btn {
+  border: 1px solid #7a869a;
+  display: block;
+  padding: 20px 0 20px 20%;
+  border-radius: 8px;
+  margin: 0 0 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.help .container .help-text a.btn i {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  background: url(../Resources/img30.png);
+  background-size: cover;
+}
+
+.help .container .help-text a.btn span {
+  display: block;
+  padding: 0 0 5px;
+  color: #5e6c84;
+}
+
+.help .container .help-text a.btn span:last-child {
+  font-size: 18px;
+  color: #172b4d;
+  font-weight: 500;
+}
+
+.help .container .help-text a.btn.no-margin {
+  margin: 0;
+}
+
+.help .container .help-text a.btn i.support {
+  background-position: -52px 0;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  .help {
+    padding: 70px 0 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .help .container .heading .h2 {
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 0 20px;
+  }
+  .help .container .heading .h2 span {
+    margin: 10px auto 0;
+  }
+  .help .container .help-pic img {
+    width: 80%;
+    max-width: 450px;
+  }
+  .help .container .help-text {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 100%;
+  }
+  .help .container .help-text a.btn {
+    padding: 12px 0 12px 60px;
+  }
+  .help .container .help-text a.btn i {
+    top: 24px;
+    left: 20px;
+  }
+  .help .container .help-text a.btn span:last-child {
+    font-size: 16px;
+  }
+  .help .container .help-text a.btn i {
+    top: 24px;
+    left: 20px;
+  }
+  .help .container .help-text a.btn span:last-child {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .help .container .heading .h2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 20px;
+  }
+}

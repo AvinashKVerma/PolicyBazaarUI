@@ -1,0 +1,185 @@
+.mid-row .container h2 {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+}
+
+.mid-row .container span {
+  background: #0065ff;
+  width: 70px;
+  height: 4px;
+  margin: 20px 0 0;
+  display: block;
+}
+
+.mid-row .container p.text-header {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.26px;
+  width: 55%;
+  margin-bottom: 10px;
+}
+
+.mid-row .container a.know {
+  color: #0065ff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.mid-row .container .list ul li span.sprite-image {
+  width: 90px;
+  height: 90px;
+  display: inline-block;
+  margin: 20px 0 0 10px;
+  background: url(../Resources/img21.avif);
+  background-size: 105%;
+}
+
+@media only screen and (max-width: 1366px) {
+  .mid-row .container .list ul {
+    margin: 35px 0 0;
+    padding: 0;
+  }
+}
+
+.mid-row .container .list ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: calc(20% - 20px);
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  min-height: 220px;
+  list-style: none;
+  display: inline-block;
+  /* margin-right: 20px; */
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.mid-row .container .list ul li div {
+  position: absolute;
+  bottom: 35px;
+  left: 30px;
+  z-index: initial;
+}
+
+.mid-row .container .list ul li div p.heading {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+.mid-row .container .list ul li div p.text {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px 0 0;
+  margin: 0;
+}
+
+.lisstt-item {
+  position: relative;
+  /* width: 202px;
+  height: 220px; */
+  z-index: auto;
+  transition: width 0.3s ease, height 0.3s ease, z-index 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+@media (min-width: 1024px) {
+  .mid-row .container .list ul li:hover {
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+    border: 0;
+    transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mid-row .container h2 {
+    text-align: center;
+    font-size: 18px;
+  }
+  .mid-row .container h2 span {
+    margin: 10px auto 0;
+  }
+  .mid-row .container p.text-header {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  mid-row .container a.know {
+    text-align: center;
+    display: block;
+  }
+  .mid-row .container .list ul {
+    margin: 20px 0 30px 0;
+    width: 100%;
+  }
+  .mid-row .container .list ul li {
+    width: 100%;
+    margin-bottom: 16px;
+    height: auto;
+    min-height: auto;
+    padding-bottom: 10px;
+  }
+  .mid-row .container .list ul li span.sprite-image.lowest-price {
+    background-position: 0 -238px;
+  }
+  .mid-row .container .list ul li span.sprite-image {
+    width: 65px;
+    height: 70px;
+    display: inline-block;
+    background-size: 110%;
+    margin: 10px 0 0 10px;
+  }
+  .mid-row .container .list ul li div {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    z-index: initial;
+  }
+  .mid-row .container .list ul li div p.heading {
+    font-size: 14px;
+  }
+  .mid-row .container .list ul li div p.text {
+    font-size: 12px;
+  }
+
+  .mid-row .container h2 span {
+    margin: 10px auto 0;
+  }
+  .mid-row .container .list ul li span.sprite-image.reliable {
+    background-position: 0 -102px;
+  }
+  .mid-row .container .list ul li span.sprite-image.happy-help {
+    background-position: 0 -206px;
+  }
+  .mid-row .container .list ul li span.sprite-image.claim-support {
+    background-position: 0 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mid-row .container .list ul li span.sprite-image.reliable {
+    background-position: 0 -102px;
+  }
+  .mid-row .container .list ul li span.sprite-image.happy-help {
+    background-position: -0px -206px;
+  }
+}
+.mid-row .container .list ul li span.sprite-image.unbiased-advice {
+  background-position: -3px -319px;
+}
+
+.mid-row .container .list ul li span.sprite-image.claim-support {
+  background-position: 0 0px;
+}

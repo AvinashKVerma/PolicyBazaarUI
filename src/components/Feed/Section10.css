@@ -1,0 +1,548 @@
+@media (min-width: 1200px) {
+  .roww {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .containerrr {
+    width: 1170px;
+    max-width: 100%;
+  }
+  .col-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.roww {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-12 {
+  -webkit-box-flex: 0;
+  -ms-flex: 2px 7px 100%;
+  flex: 2px 7px 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .roww {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .col-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .containerrr {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .roww {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .roww {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .col-12 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .containerrr {
+    width: 540px;
+    max-width: 100%;
+  }
+  .containerrr {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.col-12 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.ourpartner .partner_title {
+  margin: 0 0 30px;
+}
+
+.ourpartner .partner_title .h2 {
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .groupCompanie .group_title .h2,
+  .investor .investor_title .h2,
+  .ourpartner .partner_title .h2,
+  .pointerWraper .h3,
+  .testimonials .testimonials_title .h2 {
+    font-weight: 500;
+  }
+}
+
+.ourpartner .partner_title .h2 {
+  font-size: 30px;
+}
+
+.ourpartner .partner_title .h2 {
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ourpartner .partner_title p {
+  font-size: 18px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.36);
+  padding: 10px 0 20px 0;
+}
+
+.partnerLogo::after {
+  content: "";
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  width: 15%;
+  max-width: 130px;
+}
+
+.partnerLogo.plr {
+  padding: 0;
+}
+
+.partnerLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -35px -20px 0;
+  list-style: none;
+  padding: 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.partnerLogo a {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 15%;
+  flex: 1 0 15%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 130px;
+  margin-top: 20px;
+  margin-right: 35px;
+  background: #fff;
+  color: #000;
+  display: block;
+  position: relative;
+}
+
+.partnerLogo .logo-icon::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-size: 1232px 918px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.logo-icon::before {
+  background-image: url(../Resources/img27.avif);
+}
+
+.logo-icon.icicipru::before {
+  background-position: -203px -40px;
+}
+.logo-icon.icicipru:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.maxlife::before {
+  background-position: -342px -52px;
+}
+.logo-icon.maxlife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.hdfclife::before {
+  background-position: -610px -52px;
+}
+.logo-icon.hdfclife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.agon::before {
+  background-position: -45px -40px;
+}
+.logo-icon.agon:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.agon::before {
+  background-position: -1050px -610px;
+}
+.logo-icon.agon:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.icicilombard::before {
+  background-position: -1050px -610px;
+}
+.logo-icon.icicilombard:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.cigna::before {
+  background-position: -487px -40px;
+}
+.logo-icon.cigna:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.tataaig::before {
+  background-position: -878px -54px;
+}
+.logo-icon.tataaig:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.kotak::before {
+  background-position: -1054px -42px;
+}
+.logo-icon.kotak:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.bajajlife::before {
+  background-position: -62px -124px;
+}
+.logo-icon.bajajlife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.bajajgen::before {
+  background-position: -204px -122px;
+}
+.logo-icon.bajajgen:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.maxhealth::before {
+  background-position: -324px -135px;
+}
+.logo-icon.maxhealth:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.sbilife::before {
+  background-position: -486px -121px;
+}
+.logo-icon.sbilife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.sbigen::before {
+  background-position: -481px -690px;
+}
+.logo-icon.sbigen:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.reliancegen::before {
+  background-position: -767px -123px;
+}
+.logo-icon.reliancegen:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.reliancelife::before {
+  background-position: -633px -121px;
+}
+.logo-icon.reliancelife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.tataaia::before {
+  background-position: -906px -121px;
+}
+.logo-icon.tataaia:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.pnbmetlife::before {
+  background-position: -1053px -121px;
+}
+.logo-icon.pnbmetlife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.birlasunlife::before {
+  background-position: -52px -216px;
+}
+.logo-icon.birlasunlife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.canerahsbc::before {
+  background-position: -202px -209px;
+}
+.logo-icon.canerahsbc:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.aviva::before {
+  background-position: -489px -199px;
+}
+.logo-icon.aviva:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.digit::before {
+  background-position: -624px -214px;
+}
+.logo-icon.digit:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.religare::before {
+  background-position: -754px -216px;
+}
+.logo-icon.religare:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.star::before {
+  background-position: -905px -214px;
+}
+.logo-icon.star:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.idbifedrel::before {
+  background-position: -1049px -196px;
+}
+.logo-icon.idbifedrel:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.exidelife::before {
+  background-position: -52px -292px;
+}
+.logo-icon.exidelife:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.dhfl::before {
+  background-position: -172px -303px;
+}
+.logo-icon.dhfl:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.dhflgen::before {
+  background-position: -202px -688px;
+}
+.logo-icon.dhflgen:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.liberty::before {
+  background-position: -342px -292px;
+}
+.logo-icon.liberty:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.iffcotokio::before {
+  background-position: -476px -295px;
+}
+.logo-icon.iffcotokio:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.bhartiaxaredifining::before {
+  background-position: -752px -297px;
+}
+.logo-icon.bhartiaxaredifining:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.futuregenerali::before {
+  background-position: -910px -288px;
+}
+.logo-icon.futuregenerali:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.royalsundaram::before {
+  background-position: -1052px -288px;
+}
+.logo-icon.royalsundaram:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.orientalinsurance::before {
+  background-position: -59px -371px;
+}
+.logo-icon.orientalinsurance:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.unitedindiainsurance::before {
+  background-position: -204px -364px;
+}
+.logo-icon.unitedindiainsurance:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.newindiainsurance::before {
+  background-position: -342px -372px;
+}
+.logo-icon.newindiainsurance:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.shriram::before {
+  background-position: -482px -374px;
+}
+.logo-icon.shriram:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.edelwise::before {
+  background-position: -766px -374px;
+}
+.logo-icon.edelwise:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.national::before {
+  background-position: -907px -374px;
+}
+.logo-icon.national:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.universalsomplo::before {
+  background-position: -1055px -365px;
+}
+.logo-icon.universalsomplo:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.magmahdi::before {
+  background-position: -342px -688px;
+}
+.logo-icon.magmahdi:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.rahejaqbe::before {
+  background-position: -629px -690px;
+}
+.logo-icon.rahejaqbe:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.edelwisegen::before {
+  background-position: -751px -782px;
+}
+.logo-icon.edelwisegen:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.indiafirst::before {
+  background-position: -892px -702px;
+}
+
+.logo-icon.indiafirst:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.kotakgeneral::before {
+  background-position: -66px -775px;
+}
+.logo-icon.kotakgeneral:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.adityabirla::before {
+  background-position: -191px -783px;
+}
+.logo-icon.adityabirla:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.cholams::before {
+  background-position: -493px -776px;
+}
+.logo-icon.cholams:hover {
+  filter: grayscale(0%);
+}
+.logo-icon.lazy-bg lic::before {
+  background-position: -621px -784px;
+}
+.logo-icon.lazy-bg:hover {
+  filter: grayscale(0%);
+}
+.partnerLogo .logo-icon {
+  min-width: 130px;
+  height: 68px;
+  text-align: center;
+  border-radius: 4px;
+  border: solid 0.6px #dedfdf;
+  background-color: #fff;
+  width: 100%;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  background-size: 1232px 918px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.partnerLogo .logo-icon:hover a {
+  filter: grayscale(0%);
+}
+
+.hjk-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.hjk:hover::before {
+  opacity: 1;
+}
+
+.hjk img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 728px) {
+  .containerrr {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .ourpartner .partner_title .h2 {
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ourpartner .partner_title .h2 {
+    font-size: 18px;
+  }
+}

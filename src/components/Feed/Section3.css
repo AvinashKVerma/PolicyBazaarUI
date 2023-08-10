@@ -1,0 +1,100 @@
+.more-products {
+  margin-top: 90px;
+}
+
+.more-products p {
+  color: #0065ff;
+  font-size: 12px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.more-products .prd-links {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+.more-products .prd-links a {
+  color: #253858;
+  background: #fff;
+  font-size: 14px;
+  padding: 11px 12px;
+  margin: 0 12px 16px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-box-shadow: 0 6px 16px rgba(52, 105, 203, 0.16);
+  box-shadow: 0 6px 16px rgba(52, 105, 203, 0.16);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.more-products .prd-links a span.term::before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  background: #998dd9;
+  margin: -3px 3px 0 1px;
+  vertical-align: middle;
+}
+
+.more-products .prd-links a span.health::before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  background: #ff9a9a;
+  margin: -3px 3px 0 1px;
+  vertical-align: middle;
+}
+
+.more-products .prd-links a span.others::before {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  display: inline-block;
+  content: "";
+  background: #6b778c;
+  margin: -3px 3px 0 1px;
+  vertical-align: middle;
+}
+
+.more-products .prd-links a span.term {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #998dd9;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.more-products .prd-links a span.health {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #ff9a9a;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.more-products .prd-links a span.bi {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #00b8d9;
+  padding-bottom: 3px;
+  position: relative;
+}
+
+.more-products .prd-links a span.others {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: #6b778c;
+  padding-bottom: 3px;
+  position: relative;
+}
