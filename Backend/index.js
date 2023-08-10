@@ -8,16 +8,7 @@ function exported by the express module.
 */
 
 const app = express();
-const Pool = require("pg").Pool;
-
-const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  database: 'policybazaar',
-  password: 'postgres',
-  dialect: 'postgres',
-  port: 5432, // Default PostgreSQL port
-});
+const pool = require('./db');
 
 /* To handle the HTTP Methods Body Parser
 is used, Generally used to extract the
