@@ -1,0 +1,201 @@
+.app-block .container .copy-part {
+  width: 50%;
+  text-align: left;
+}
+
+.app-block .container .copy-part p.text-head {
+  font-size: 30px;
+  color: #000;
+  line-height: 40px;
+}
+
+.app-block .container .copy-part p.line {
+  text-align: left;
+  margin: 10px 0 20px;
+}
+
+.app-block .container .copy-part p.line span {
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #0065ff;
+}
+
+.app-block .container .copy-part p.control {
+  color: #5e6c84;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.app-block .container .copy-part .list {
+  margin: 0;
+  padding: 0;
+}
+
+.app-block .container .copy-part .list li::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(../Resources/img23.webp) no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  background-size: cover;
+  margin: 0 14px 0 -30px;
+}
+
+.app-block .container .copy-part .list li {
+  list-style: none;
+  margin: 0 0 0 30px;
+  padding: 0 0 20px 0;
+  font-size: 14px;
+  color: #253858;
+}
+
+.app-block .container span.text {
+  font-size: 14px;
+  line-height: 24px;
+  color: #505f79;
+  padding: 20px 0 20px;
+  display: block;
+}
+
+.app-block .container .copy-part .play-store {
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background: url(../Resources/img22.avif) no-repeat;
+  background-size: auto;
+  background-size: cover;
+  margin-right: 20px;
+}
+
+.download-app1 {
+  background: #f5f6fc;
+}
+
+.app-block .container .copy-part .play-store.ios {
+  background-position: 0 -80px;
+  margin-right: 0;
+}
+
+.app-block .container .mobile {
+  width: 50%;
+  text-align: center;
+}
+
+.app-block .container .mobile img {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+  .app-block .container .copy-part {
+    width: 100%;
+    text-align: left;
+  }
+  .app-block .container .copy-part p.text-head {
+    font-size: 18px;
+    padding: 20px 0 0;
+    padding-bottom: 0px;
+  }
+  .app-block .container .mobile {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .app-block .container .copy-part p.control {
+    padding-bottom: 20px;
+  }
+  .app-block .container .copy-part p.text-head {
+    font-size: 18px;
+    padding: 20px 0 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .app-block .container .copy-part p.text-head {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .app-block .container .mobile .install-now {
+    font-size: 16px;
+    background: #0065ff;
+    border-radius: 4px;
+    padding: 16px 0;
+    margin: 30px 0 0;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  .app-block .container .copy-part p.text-head {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 0;
+  }
+  .app-block .container .mobile .install-now {
+    display: block;
+    font-size: 16px;
+    background: #0065ff;
+    border-radius: 4px;
+    padding: 16px 0;
+    margin: 30px 0 0;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  .app-block .container .copy-part p.text-head {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 20px 0 10px;
+  }
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+  .app-block .container .copy-part p.text-head {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .install-now {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .app-block .container span.text,
+  .app-block .container .copy-part .play-store {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  .app-block .container .mobile .install-now {
+    display: block;
+    font-size: 16px;
+    background: #0065ff;
+    border-radius: 4px;
+    padding: 16px 0;
+    margin: 30px 0 0;
+    text-decoration: none;
+    color: #fff;
+  }
+  .app-block .container .copy-part p.line {
+    display: none;
+  }
+  .app-block .container .copy-part p.control {
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+}

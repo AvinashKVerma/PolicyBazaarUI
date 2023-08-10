@@ -1,0 +1,287 @@
+.main-container {
+  width: 100%;
+  margin: 0 auto 0;
+}
+
+.main-container .container {
+  max-width: 1140px;
+  padding: 0;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.prd-container {
+  width: 100%;
+}
+
+.container.prd-container.homeIcons {
+  margin-top: 12px;
+  transition: margin-top 0.5s linear;
+}
+
+.blk-prd.featurebox {
+  padding: 32px 0 20px;
+}
+
+.blk-prd {
+  background: #f2f7ff;
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.blk-prd .container.featurebanner {
+  padding-bottom: 32px;
+}
+
+.blk-prd .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.best-place {
+  background: url(./Resources/img13.avif) left top no-repeat,
+    url(./Resources/img14.avif) right top no-repeat;
+  min-height: 510px;
+}
+
+.best-place .container {
+  margin: 0 auto;
+}
+
+.home-banner {
+  width: 100%;
+  background: #f2f7ff;
+  padding: 34px 0 0;
+}
+.home-banner .container {
+  padding-bottom: 34px;
+}
+
+.mid-row {
+  background: #fff;
+  padding: 5% 0;
+}
+
+.mid-row .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.app-block {
+  padding: 85px 0 40px;
+  background: #f7f9ff;
+}
+
+.app-block .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.investor-new {
+  padding: 24px 0;
+  background: #f4f5f7;
+}
+
+.groupCompanie,
+.madeEasy,
+.mobileApp,
+.ourpartner,
+.testimonials {
+  opacity: 1;
+}
+
+.ourpartner {
+  width: 100vw;
+  background-size: 100%;
+  display: table;
+  padding: 5% 0;
+  background-color: #f7f9ff;
+}
+
+.ptable {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.help {
+  padding: 70px 0;
+}
+
+.help .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.group-companies {
+  width: 100%;
+  padding: 40px 0;
+}
+
+.group-companies .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (max-width: 640px) {
+  .more-products {
+    display: none;
+  }
+  .main-container .container.prd-container {
+    width: 100%;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    background: #fff;
+    margin-top: 0;
+  }
+  .best-place {
+    background: #f5f6fc;
+    min-height: auto;
+  }
+  .best-place .container {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1023px) {
+  .best-place {
+    background: #f5f6fc;
+    min-height: auto;
+  }
+  .best-place .container {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .mid-row .container {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+  }
+  .ourpartner,
+  .testimonials {
+    height: auto;
+    padding: 5% 0 7%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .app-block {
+    padding: 30px 0 0;
+    position: relative;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .container {
+    width: 90%;
+    max-width: 100%;
+  }
+  .customers-saying .container .h2 {
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0;
+    margin: 40px 0 20px;
+    font-weight: 500;
+    color: #253858;
+  }
+
+  .customers-saying .container .h2 span {
+    background: #0065ff;
+    width: 70px;
+    height: 4px;
+    margin: 20px 0 0;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 640px) {
+  .help {
+    padding: 70px 0 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 432px;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

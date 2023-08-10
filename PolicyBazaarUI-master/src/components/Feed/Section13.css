@@ -1,0 +1,136 @@
+.group-companies .container .text {
+  width: 140px;
+  font-size: 20px;
+  color: #172b4d;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.group-companies .container .co-logo {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.group-companies .container .logo-block.fintechlogo {
+  width: 80px;
+}
+
+.group-companies .container .logo-block.docprimelogo {
+  width: 80px;
+}
+.group-companies .container .logo-block {
+  width: 140px;
+  height: 60px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-right: 40px;
+}
+
+.group-companies .container .logo-block.fintechlogo .co-logo-sprite.fintech {
+  width: 80px;
+  background-position: -20px 8px;
+  background-size: 150%;
+}
+
+.group-companies .container .logo-block .co-logo-sprite {
+  background: url(../Resources/img31.avif) no-repeat;
+  background-size: 100%;
+  width: 140px;
+  height: 60px;
+}
+
+.group-companies .container .logo-block .co-logo-sprite.policy-bazaar {
+  background-position: 0 -62px;
+}
+
+.group-companies .container .logo-block .co-logo-sprite.paisa-bazaar {
+  background-position: 0 -122px;
+}
+
+.group-companies .container .logo-block .co-logo-sprite.pb-partner {
+  background-position: 0 -184px;
+}
+
+.group-companies .container .logo-block.docprimelogo .co-logo-sprite.doc-prime {
+  width: 80px;
+  background-position: -20px -276px;
+  background-size: 150%;
+}
+
+.group-companies .container .logo-block .co-logo-sprite.quick-fix-cars {
+  background-position: 0 -401px;
+}
+
+.group-companies .container .logo-block .co-logo-sprite.moneywide {
+  background-position: 0 -466px;
+}
+
+.group-companies .container .logo-block.last {
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .group-companies .container .text {
+    width: 100%;
+    text-align: center;
+  }
+  .group-companies .container .co-logo {
+    width: 100%;
+    max-width: 720px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .group-companies .container .text {
+    font-size: 18px;
+    text-align: center;
+  }
+  .group-companies .container .co-logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .group-companies .container .logo-block.fintechlogo {
+    width: 44%;
+  }
+  .group-companies .container .logo-block {
+    width: 44%;
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  .group-companies .container .logo-block.fintechlogo .co-logo-sprite.fintech {
+    width: 100%;
+    background-position: 0 13px;
+    background-size: 90%;
+  }
+  .group-companies .container .logo-block .co-logo-sprite.policy-bazaar {
+    width: 140px;
+    background-position: 0 -60px;
+  }
+  .group-companies .container .logo-block .co-logo-sprite.paisa-bazaar {
+    width: 140px;
+    background-position: 0 -116px;
+  }
+  .group-companies .container .logo-block .co-logo-sprite.pb-partner {
+    width: 140px;
+    background-position: 0 -183px;
+  }
+  .group-companies .container .logo-block.docprimelogo {
+    width: 44%;
+  }
+  .group-companies
+    .container
+    .logo-block.docprimelogo
+    .co-logo-sprite.doc-prime {
+    width: 140px;
+    background-size: 100%;
+    background-position: 0 -326px;
+  }
+  .group-companies .container .logo-block .co-logo-sprite.quick-fix-cars {
+    background-position: 0 -401px;
+  }
+}

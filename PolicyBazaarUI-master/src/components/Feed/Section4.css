@@ -1,0 +1,175 @@
+.blk-prd .container .prd-bg.investment-plans {
+  background: #4fdc95 url(../Resources/img7.avif) right -1px top no-repeat;
+  background-size: 356px;
+}
+
+.blk-prd .container .prd-bg {
+  border-radius: 18px;
+  min-width: 368px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container {
+  margin: 16px 0 0 16px;
+  position: relative;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.float-icon.investment-plan {
+  background-position: 0 -85px;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container span.float-icon {
+  width: 110px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background: url(../Resources/img8.avif) no-repeat;
+  background-size: 90%;
+  -webkit-transition: ease all 1s;
+  transition: ease all 1s;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.icon.investment-plans {
+  background-position: 0 16.4%;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container span.icon {
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-position: 0 14.7%;
+  margin-bottom: 5px;
+}
+
+.icon-bg {
+  background: url(../Resources/img9.svg) no-repeat;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container p.head {
+  font-size: 10px;
+  color: #fff;
+}
+
+.blk-prd .container .prd-bg .block-data .copy {
+  font-size: 22px;
+  color: #fff;
+  line-height: 33px;
+  padding-top: 16px;
+  font-weight: 400;
+}
+
+.blk-prd .container .prd-bg .block-data .copy span.large-text {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.blk-prd .container .prd-bg .block-data .copy span {
+  font-weight: 700;
+}
+
+.blk-prd .container .prd-bg.health-insurance {
+  background: #7080fa url(../Resources/img10.avif) right -1px top no-repeat;
+  background-size: 196px;
+}
+
+.blk-prd .container .prd-bg:first-child {
+  margin-right: 16px;
+}
+
+.blk-prd .container .prd-bg {
+  border-radius: 18px;
+  min-width: 368px;
+  height: 200px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container {
+  margin: 16px 0 0 16px;
+  position: relative;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.float-icon.health-insurance {
+  background-position: 0 0;
+}
+
+.blk-prd .container .prd-bg.home-insurance {
+  background: #3cbbda url(../Resources/img10.avif) right -1px top no-repeat;
+  background-size: 196px;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.float-icon.home-insurance {
+  background-position: 0 -170px;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.icon.home-insurance {
+  background-position: 0 18.1%;
+}
+
+.blk-prd .container .prd-bg.pbaskci {
+  background: #ff9898 url(../Resources/img10.avif) right -1px top no-repeat;
+  background-size: 196px;
+}
+
+.blk-prd
+  .container
+  .prd-bg
+  .block-data
+  .left-container
+  span.float-icon.askpb-insurance {
+  background-position: 0 -235px;
+}
+
+.blk-prd .container .prd-bg .block-data .left-container span.icon.pbaskci {
+  background-position: 0 0;
+  background: url(../Resources/img11.svg) no-repeat;
+  background-size: 100%;
+}
+
+.blk-prd .container .prd-bg.onestop {
+  background: url(../Resources/img12.avif) right -1px top no-repeat;
+  background-size: cover;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+}
+
+.blk-prd .container.featurebanner {
+  padding-bottom: 0px;
+}
+
+@media (max-width: 1200px) {
+  .blk-prd .container .prd-bg.home-insurance {
+    width: fit-content;
+  }
+}

@@ -1,0 +1,26 @@
+/* .inv {
+  width: 152px;
+  height: 62px;
+  margin: 0 auto;
+  display: inline-block;
+  background-size: auto;
+  background-size: 769px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+} */
+
+.investor-sprite {
+  width: 152px;
+  height: 62px;
+  margin: 0 auto;
+  display: inline-block;
+  background: url("../Resources/32.avif") no-repeat;
+  background-size: auto;
+  background-size: 769px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}

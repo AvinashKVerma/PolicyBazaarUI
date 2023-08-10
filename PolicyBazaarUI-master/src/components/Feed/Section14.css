@@ -1,0 +1,61 @@
+.investor-sprite {
+  width: 152px;
+  height: 62px;
+  margin: 0 auto;
+  display: inline-block;
+  background: url(../Resources/32.avif) no-repeat;
+  background-size: 769px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.investor-sprite.tiger {
+  background-position: 0 -45px;
+}
+.investor-sprite.infoedge {
+  background-position: -155px -45px;
+}
+.investor-sprite.premji {
+  background-position: -305px -45px;
+}
+.investor-sprite.temasek {
+  background-position: -464px -45px;
+}
+.investor-sprite.steadview {
+  background-position: -617px -45px;
+}
+.investor-sprite.chiratae {
+  background-position: -155px -200px;
+}
+.investor-sprite.icp {
+  background-position: -315px -178px;
+  height: 105px;
+}
+.investor-sprite.truenorth {
+  background-position: -460px -200px;
+}
+.investor-sprite.softbank {
+  background-position: -617px -200px;
+}
+.investor-sprite.capital-group {
+  background-position: -310px -348px;
+}
+.investor-sprite.tencent {
+  background-position: -152px -348px;
+}
+.investor-sprite.baycapital {
+  background-position: -13px -433px;
+  background-size: 950px;
+}
+.investor-sprite.falcon-edge {
+  background-position: -458px -345px;
+}
+.investor-sprite.ward-ferry {
+  background-position: -617px -348px;
+}
+
+.investor-sprite:hover {
+  filter: grayscale(0%);
+}
