@@ -1,22 +1,20 @@
 // Entry Point of the API Server
 const express = require("express");
-const cors = require('cors')
+const cors = require("cors");
 
 /* Creates an Express application.
-The express() function is a top-level
-function exported by the express module.
+The express() function is a top-level function exported by the express module.
 */
 
 const app = express();
-const pool = require('./db');
+const pool = require("./db");
 
-/* To handle the HTTP Methods Body Parser
-is used, Generally used to extract the
+/* To handle the HTTP Methods Body Parser is used, Generally used to extract the
 entire body portion of an incoming
 request stream and exposes it on req.body
 */
 const bodyParser = require("body-parser");
-app.use(cors())
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -58,36 +56,37 @@ app.get("/testdata", (req, res, next) => {
   });
 });
 
-app.get('/items/:id', (req, res) => {
+app.get("/items/:id", (req, res) => {
   const { id: rawItemId } = req.params;
   const itemId = rawItemId.substring(1);
 
-  pool.query('SELECT * FROM insurance WHERE id = $1', [itemId])
+  pool
+    .query("SELECT * FROM insurance WHERE id = $1", [itemId])
     .then((testData) => {
       console.log(testData);
       res.send(testData);
     })
     .catch((error) => {
-      console.error('Error fetching data:', error);
-      res.status(500).json({ error: 'Internal server error' });
+      console.error("Error fetching data:", error);
+      res.status(500).json({ error: "Internal server error" });
     });
 });
 
-app.delete('/delete/:id', (req, res) => {
+app.delete("/delete/:id", (req, res) => {
   const { id } = req.params;
 
-  pool.query('DELETE FROM insurance WHERE id = $1', [id], (err, result) => {
+  pool.query("DELETE FROM insurance WHERE id = $1", [id], (err, result) => {
     if (err) {
-      console.error('Error deleting item:', err);
-      res.status(500).json({ error: 'Internal server error' });
+      console.error("Error deleting item:", err);
+      res.status(500).json({ error: "Internal server error" });
     } else {
-      console.log('Item deleted successfully');
-      res.status(200).json({ message: 'Item deleted successfully' });
+      console.log("Item deleted successfully");
+      res.status(200).json({ message: "Item deleted successfully" });
     }
   });
 });
 
-app.put('/update/:id', async (req, res) => {
+app.put("/update/:id", async (req, res) => {
   const { id } = req.params;
   const { name, gender, dob } = req.body;
 
@@ -102,16 +101,16 @@ app.put('/update/:id', async (req, res) => {
     const { rows } = await pool.query(queryText, values);
 
     if (rows.length === 0) {
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({ error: "User not found" });
     }
 
     res.status(200).json({
-      message: 'User updated successfully!',
+      message: "User updated successfully!",
       user: rows[0],
     });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: 'Internal Server Error' });
+    res.status(500).json({ error: "Internal Server Error" });
   }
 });
 
