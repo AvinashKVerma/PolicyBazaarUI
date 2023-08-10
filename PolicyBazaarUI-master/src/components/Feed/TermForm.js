@@ -111,6 +111,7 @@ const TermForm = (props) => {
               </div>
               <div className="btn">
             <button type='submit'>Submit</button>
+            
               </div>
             <div className="btn">
             {!nam && (
