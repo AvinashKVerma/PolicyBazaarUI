@@ -100,9 +100,9 @@ const TermLife = () => {
               />
             </div>
           ))}
-          <br />
-          <br />
+          <div className="backbtn">
           <button onClick={() => setShow(false)}>Back</button>
+          </div>
         </>
       )}
     </>

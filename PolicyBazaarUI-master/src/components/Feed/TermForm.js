@@ -20,30 +20,28 @@ const TermForm = (props) => {
 
   const formSubmit = (e) => {
     e.preventDefault();
-    if(!gender){
-      alert("Please select your gender")
-      return
+    if (!gender) {
+      alert("Please select your gender");
+      return;
     }
-    if(!name)
-    {
-      alert("Name can not be empty")
-      return
+    if (!name) {
+      alert("Name can not be empty");
+      return;
     }
-    if(!dateOfBirth){
-      alert("Date Of Birth can not be empty")
-      return
-    }
-    else{
-      const formData = { id, gender, name, dateOfBirth };
-    if (!nam) {
-      handleSubmit(formData);
+    if (!dateOfBirth) {
+      alert("Date Of Birth can not be empty");
+      return;
     } else {
-      handleUpdate(formData);
-      toggle();
-    }
-    setGender("");
-    setName("");
-    setDateOfBirth("");
+      const formData = { id, gender, name, dateOfBirth };
+      if (!nam) {
+        handleSubmit(formData);
+      } else {
+        handleUpdate(formData);
+        toggle();
+      }
+      setGender("");
+      setName("");
+      setDateOfBirth("");
     }
   };
 
@@ -91,34 +89,33 @@ const TermForm = (props) => {
                 <label htmlFor='other'>Other</label>
               </div>
             </div>
-              <div className="inputField">
-                <label htmlFor='name'>Name :</label>
-                <input
-                  type='text'
-                  id='name'
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                />
-              </div>
-              <div className="inputField">
-                <label htmlFor='dob'>Date of Birth :</label>
-                <input
-                  type='date'
-                  id='dob'
-                  value={dateOfBirth}
-                  onChange={(e) => setDateOfBirth(e.target.value)}
-                />
-              </div>
-              <div className="btn">
-            <button type='submit'>Submit</button>
-            
-              </div>
-            <div className="btn">
-            {!nam && (
-              <button type='button' onClick={handleClick1}>
-                Show Data
-              </button>
-            )}
+            <div className='inputField'>
+              <label htmlFor='name'>Name :</label>
+              <input
+                type='text'
+                id='name'
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+              />
+            </div>
+            <div className='inputField'>
+              <label htmlFor='dob'>Date of Birth :</label>
+              <input
+                type='date'
+                id='dob'
+                value={dateOfBirth}
+                onChange={(e) => setDateOfBirth(e.target.value)}
+              />
+            </div>
+            <div className='btn'>
+              <button type='submit'>Submit</button>
+            </div>
+            <div className='btn'>
+              {!nam && (
+                <button type='button' onClick={handleClick1}>
+                  Show Data
+                </button>
+              )}
             </div>
           </div>
         </form>
