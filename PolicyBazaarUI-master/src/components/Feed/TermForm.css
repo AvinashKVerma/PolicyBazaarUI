@@ -59,11 +59,11 @@
 
   .btn {
     display: flex;
-    padding-bottom: 5px;
+    padding: 5px;
     justify-content: center;
     
   }
 
   .btn button {
-    width:70%
+    width:50%
   }
