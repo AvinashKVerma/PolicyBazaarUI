@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import "./App.css";
-import Header from "./components/Header/Header";
-import Feed from "./components/Feed";
-import TermLife from "./components/Feed/TermLife";
+import React, { useState } from 'react';
+import './App.css';
+import Header from './components/Header/Header';
+import Feed from './components/Feed';
+import TermLife from './components/Feed/Form/TermLife';
 
-import Footer from "./components/Footer/Footer";
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [stat, setStat] = useState(false);
@@ -17,14 +17,14 @@ function App() {
       {stat ? (
         <TermLife />
       ) : (
-        <div className="App">
-          <header className="App-header">
+        <div className='App'>
+          <header className='App-header'>
             <Header />
           </header>
-          <div className="feeed">
+          <div className='feeed'>
             <Feed func={func} />
           </div>
-          <footer className="moreInsurance">
+          <footer className='moreInsurance'>
             <Footer />
           </footer>
         </div>

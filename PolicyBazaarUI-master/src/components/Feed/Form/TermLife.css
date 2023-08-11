@@ -1,0 +1,13 @@
+.form-container {
+  display: flex;
+}
+
+.left-side {
+  width: 46%;
+  display: flex;
+  justify-content: center;
+}
+
+.right-side {
+  width: 54%;
+}

@@ -1,7 +1,10 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import TermForm from "./TermForm";
-import ShowForm from "./ShowForm";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import TermForm from './TermForm';
+import ShowForm from './ShowForm';
+import Navbar from './Navbar';
+import Sidebar from './Sidebar';
+import './TermLife.css';
 
 const TermLife = () => {
   const [show, setShow] = useState(false);
@@ -14,7 +17,7 @@ const TermLife = () => {
 
   const fetchData = () => {
     axios
-      .get("http://localhost:3005/testdata")
+      .get('http://localhost:3005/testdata')
       .then((response) => {
         setData(response.data); // Assuming the server returns an array
       })
@@ -24,8 +27,9 @@ const TermLife = () => {
   };
 
   const handleSubmit = (e) => {
+    // console.log(e);
     axios
-      .post("http://localhost:3005/users", e)
+      .post('http://localhost:3005/users', e)
       .then((response) => {
         fetchData(); // Fetch updated data after successful POST
       })
@@ -35,7 +39,7 @@ const TermLife = () => {
   };
 
   const handleDel = (itemId) => {
-    const confirmRemove = window.confirm("Are you sure?");
+    const confirmRemove = window.confirm('Are you sure?');
     if (confirmRemove) {
       axios
         .delete(`http://localhost:3005/delete/${itemId}`)
@@ -51,7 +55,7 @@ const TermLife = () => {
   const handleClick1 = () => {
     setShow(!show);
     axios
-      .get("http://localhost:3005/testdata")
+      .get('http://localhost:3005/testdata')
       .then((response) => {
         const result = response.data;
         setData(result);
@@ -68,22 +72,36 @@ const TermLife = () => {
       name: ele.name,
       gender: ele.gender,
       dob: ele.dateOfBirth,
+      mobile: ele.mobile,
     };
     axios
       .put(`http://localhost:3005/update/${ele.id}`, updatedData)
       .then((response) => {
-        console.log("User updated successfully:", response.data);
+        console.log('User updated successfully:', response.data);
         fetchData(); // Fetch updated data after successful update
       })
       .catch((error) => {
-        console.error("Error updating user:", error);
+        console.error('Error updating user:', error);
       });
   };
 
   return (
     <>
       {!show ? (
-        <TermForm handleSubmit={handleSubmit} handleClick1={handleClick1} />
+        <>
+          <Navbar />
+          <div className='form-container'>
+            <div className='left-side'>
+              <Sidebar />
+            </div>
+            <div className='right-side'>
+              <TermForm
+                handleSubmit={handleSubmit}
+                handleClick1={handleClick1}
+              />
+            </div>
+          </div>
+        </>
       ) : (
         <>
           {data.map((ele) => (
@@ -93,6 +111,7 @@ const TermLife = () => {
                 name={ele.name}
                 gender={ele.gender}
                 dob={ele.dob}
+                mobile={ele.mobile}
                 handleDel={handleDel}
                 handleUpdate={handleUpdate}
                 handleSubmit={handleSubmit}
@@ -100,8 +119,8 @@ const TermLife = () => {
               />
             </div>
           ))}
-          <div className="backbtn">
-          <button onClick={() => setShow(false)}>Back</button>
+          <div className='backbtn'>
+            <button onClick={() => setShow(false)}>Back</button>
           </div>
         </>
       )}
