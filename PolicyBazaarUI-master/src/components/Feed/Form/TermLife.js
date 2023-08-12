@@ -4,6 +4,7 @@ import TermForm from './TermForm';
 import ShowForm from './ShowForm';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import Footer from './Footer';
 import './TermLife.css';
 
 const TermLife = () => {
@@ -101,24 +102,38 @@ const TermLife = () => {
               />
             </div>
           </div>
+          <Footer />
         </>
       ) : (
         <>
-          {data.map((ele) => (
-            <div key={ele.id}>
-              <ShowForm
-                id={ele.id}
-                name={ele.name}
-                gender={ele.gender}
-                dob={ele.dob}
-                mobile={ele.mobile}
-                handleDel={handleDel}
-                handleUpdate={handleUpdate}
-                handleSubmit={handleSubmit}
-                handleClick1={handleClick1}
-              />
-            </div>
-          ))}
+          <table className='data-table'>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>Mobile Number</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.map((ele) => (
+                <tr key={ele.id}>
+                  <ShowForm
+                    id={ele.id}
+                    name={ele.name}
+                    gender={ele.gender}
+                    dob={ele.dob}
+                    mobile={ele.mobile}
+                    handleDel={handleDel}
+                    handleUpdate={handleUpdate}
+                    handleSubmit={handleSubmit}
+                    handleClick1={handleClick1}
+                  />
+                </tr>
+              ))}
+            </tbody>
+          </table>
           <div className='backbtn'>
             <button onClick={() => setShow(false)}>Back</button>
           </div>

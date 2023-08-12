@@ -1,5 +1,11 @@
 .containr {
-  width: 100%;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.formHeading {
+  padding-top: 20px;
 }
 
 form {
@@ -7,19 +13,14 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  border-left: 1px solid #ccc;
-}
-
-.form_update {
-  border-top: 1px solid #ccc;
-  border-radius: 10px;
+  width: 62%;
 }
 
 .radio-group {
   display: flex; /* Display radio buttons in a row */
   gap: 10px; /* Gap between radio buttons and labels */
   align-items: center;
-  margin-bottom: 10px;
+  margin: 30px 0;
 }
 
 input[type='radio'] {
@@ -41,17 +42,13 @@ button {
 }
 
 .inputField {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  width: 100%;
+  float: left;
+  margin: 35px 0 0;
+  position: relative;
 }
 
 .inputField input {
-  /* margin-left: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px solid #ccc;
-  font-size: larger; */
   width: 100%;
   border: 0;
   font-size: 16px;
@@ -62,8 +59,15 @@ button {
 }
 
 .inputField label {
-  display: flex;
-  align-items: center;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  top: -9px;
+  left: 11px;
+  background: #fff;
+  z-index: 1;
+  padding: 0 4px;
 }
 
 .btn {
@@ -103,27 +107,47 @@ h1 > .span {
   font-weight: 400;
 }
 
-/*
-input
-color: #253858;
-width: 100%;
-border: 0;
-font-size: 16px;
-border-radius: 8px;
-height: 64px;
-padding-left: 14px;
-border: 1px solid #5e6c84;
+.form-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.formm {
+  width: 100%;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
+input[type='radio'] {
+  width: 16px; /* Set the desired width */
+  height: 16px;
+  border-width: 1px;
+}
+/* 
+.option {
+  position: relative;
+}
 
-display: block;
-font-size: 12px;
-font-weight: 400;
+.option label::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #007aff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
 
-
-position: absolute;
-top: -9px;
-left: 11px;
-background: #fff;
-z-index: 1;
-padding: 0 4px;
-*/
+.option label::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(50%);
+  right: 15%;
+  width: 20px;
+  height: 20px;
+  background-color: #007aff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+} */

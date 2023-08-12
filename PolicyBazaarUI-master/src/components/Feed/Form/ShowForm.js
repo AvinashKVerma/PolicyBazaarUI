@@ -21,11 +21,20 @@ const ShowForm = (props) => {
   return (
     <>
       {!update ? (
-        <h3>
-          Name: {name}, DOB: {dob}, Gender: {gender}, Mobile: {mobile}
-          <button onClick={() => handleDel(id)}>delete</button>
-          <button onClick={() => updateData(id)}>Update</button>
-        </h3>
+        <>
+          {/* <h3>
+            Name: {name}, DOB: {dob}, Gender: {gender}, Mobile: {mobile}
+          </h3> */}
+
+          <td>{name}</td>
+          <td>{dob}</td>
+          <td>{gender}</td>
+          <td>{mobile}</td>
+          <td>
+            <button onClick={() => handleDel(id)}>Delete</button>
+            <button onClick={() => updateData(id)}>Update</button>
+          </td>
+        </>
       ) : (
         <>
           <TermForm
