@@ -4,3 +4,9 @@
   text-align: center;
   padding: 0 1rem 1rem;
 }
+
+.footrr {
+  /* position: absolute; */
+  bottom: 0;
+  /* min-width: 100vw; */
+}

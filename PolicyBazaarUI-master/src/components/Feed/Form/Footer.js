@@ -2,9 +2,11 @@ import React from 'react';
 import './Footer.css';
 import { FaYoutube, FaFacebook, FaTwitter } from 'react-icons/fa';
 
-const Footer = () => {
+const Footer = (props) => {
+  const { show } = props;
+
   return (
-    <footer>
+    <footer className={show ? 'footrr' : ''}>
       <div style={styles.footer}>
         <div style={styles.followBlog}>
           <p>Follow our blog</p>

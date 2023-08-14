@@ -91,6 +91,7 @@ const TermLife = () => {
       {!show ? (
         <>
           <Navbar />
+
           <div className='form-container'>
             <div className='left-side'>
               <Sidebar />
@@ -102,40 +103,52 @@ const TermLife = () => {
               />
             </div>
           </div>
-          <Footer />
+          <div className='footttr'>
+            <Footer />
+          </div>
         </>
       ) : (
         <>
-          <table className='data-table'>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Date Of Birth</th>
-                <th>Gender</th>
-                <th>Mobile Number</th>
-                <th>Actions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((ele) => (
-                <tr key={ele.id}>
-                  <ShowForm
-                    id={ele.id}
-                    name={ele.name}
-                    gender={ele.gender}
-                    dob={ele.dob}
-                    mobile={ele.mobile}
-                    handleDel={handleDel}
-                    handleUpdate={handleUpdate}
-                    handleSubmit={handleSubmit}
-                    handleClick1={handleClick1}
-                  />
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <div className='backbtn'>
-            <button onClick={() => setShow(false)}>Back</button>
+          <div className='footerr'>
+            <div className='navvv'>
+              <Navbar />
+            </div>
+            <div className='dataShow'>
+              <table className='data-table'>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Date Of Birth</th>
+                    <th>Gender</th>
+                    <th>Mobile Number</th>
+                    <th>Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.map((ele, index) => (
+                    <tr
+                      key={ele.id}
+                      className={index % 2 === 0 ? 'odd' : 'even'}>
+                      <ShowForm
+                        id={ele.id}
+                        name={ele.name}
+                        gender={ele.gender}
+                        dob={ele.dob}
+                        mobile={ele.mobile}
+                        handleDel={handleDel}
+                        handleUpdate={handleUpdate}
+                        handleSubmit={handleSubmit}
+                        handleClick1={handleClick1}
+                      />
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              <div className='backbtn'>
+                <button onClick={() => setShow(false)}>Back</button>
+              </div>
+            </div>
+            <Footer show={show} />
           </div>
         </>
       )}

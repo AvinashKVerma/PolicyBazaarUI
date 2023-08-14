@@ -17,7 +17,7 @@ const TermForm = (props) => {
   const [gender, setGender] = useState(gendr ? gendr : '');
   const [name, setName] = useState(nam ? nam : '');
   const [dateOfBirth, setDateOfBirth] = useState(doB ? doB : '');
-  const [id] = useState(iD ? iD : uuidv4);
+  const [id, setId] = useState(iD ? iD : uuidv4());
   const [mobile, setMobile] = useState(mob ? mob : '');
 
   const formSubmit = (e) => {
@@ -45,6 +45,7 @@ const TermForm = (props) => {
       setName('');
       setDateOfBirth('');
       setMobile('');
+      setId();
     }
   };
 
